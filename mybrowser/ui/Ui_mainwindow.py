@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file '/Users/shireenrao/mydev/python/MyBrowser/mybrowser/ui/mainwindow.ui'
 #
-# Created: Fri Jul 12 14:44:26 2013
+# Created: Fri Jul 12 15:24:41 2013
 #      by: PyQt4 UI code generator 4.10
 #
 # WARNING! All changes made in this file will be lost!
@@ -51,7 +51,7 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow", None))
-        self.btnNavigate.setText(_translate("MainWindow", "PushButton", None))
+        self.btnNavigate.setText(_translate("MainWindow", "Navigate", None))
 
 from PyQt4 import QtWebKit
 

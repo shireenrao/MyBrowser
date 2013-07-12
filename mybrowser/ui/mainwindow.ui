@@ -23,7 +23,7 @@
       <item>
        <widget class="QPushButton" name="btnNavigate">
         <property name="text">
-         <string>PushButton</string>
+         <string>Navigate</string>
         </property>
        </widget>
       </item>
