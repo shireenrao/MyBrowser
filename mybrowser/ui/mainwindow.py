@@ -24,6 +24,24 @@ class MainWindow(QMainWindow, Ui_MainWindow):
     def on_btnNavigate_released(self):
         """
         Slot invoked when Navigate button is pressed
+        #TODO: check out this code, ensure it does cover all the possibilities
         """
-        self.webView.setUrl(QUrl(self.txtUrl.text()))
-        
+        theUrl = self.txtUrl.text()
+        if theUrl[0:7] != 'http://':
+            theUrl = 'http://' + theUrl
+        self.webView.setUrl(QUrl(theUrl))
+    
+    @pyqtSignature("QString")
+    def on_webView_titleChanged(self, title):
+        """
+        Change title based on site
+        """
+        self.setWindowTitle(title)
+    
+    @pyqtSignature("QUrl")
+    def on_webView_urlChanged(self, url):
+        """
+        Slot documentation goes here.
+        """
+        # TODO: not implemented yet
+        self.txtUrl.setText(url.toString())
