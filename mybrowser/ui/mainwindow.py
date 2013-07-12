@@ -5,7 +5,7 @@ Module implementing MainWindow.
 """
 
 from PyQt4.QtGui import QMainWindow
-from PyQt4.QtCore import pyqtSignature
+from PyQt4.QtCore import pyqtSignature,  QUrl
 
 from Ui_mainwindow import Ui_MainWindow
 
@@ -23,7 +23,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
     @pyqtSignature("")
     def on_btnNavigate_released(self):
         """
-        Slot documentation goes here.
+        Slot invoked when Navigate button is pressed
         """
-        # TODO: not implemented yet
-        raise NotImplementedError
+        self.webView.setUrl(QUrl(self.txtUrl.text()))
+        

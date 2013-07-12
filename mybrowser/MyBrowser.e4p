@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Project SYSTEM "Project-4.6.dtd">
 <!-- eric4 project file for project MyBrowser -->
-<!-- Saved: 2013-07-12, 14:32:05 -->
+<!-- Saved: 2013-07-12, 15:20:23 -->
 <!-- Copyright (C) 2013 ,  -->
 <Project version="4.6">
   <Language>en</Language>
@@ -14,8 +14,12 @@
   <Sources>
     <Source>minibrowser.py</Source>
     <Source>__init__.py</Source>
+    <Source>ui/__init__.py</Source>
+    <Source>ui/Ui_mainwindow.py</Source>
+    <Source>ui/mainwindow.py</Source>
   </Sources>
   <Forms>
+    <Form>ui/mainwindow.ui</Form>
   </Forms>
   <Translations>
   </Translations>

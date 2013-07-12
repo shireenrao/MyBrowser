@@ -19,6 +19,9 @@ local.properties
 .settings/
 .loadpath
 .DS_Store
+*.pyc
+.eric4project
+.ropeproject
 
 # PDT-specific
 .buildpath
