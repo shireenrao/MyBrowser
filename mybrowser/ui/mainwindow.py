@@ -43,5 +43,11 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         """
         Slot documentation goes here.
         """
-        # TODO: not implemented yet
         self.txtUrl.setText(url.toString())
+    
+    @pyqtSignature("")
+    def on_txtUrl_returnPressed(self):
+        """
+        Slot documentation goes here.
+        """
+        self.on_btnNavigate_released()
